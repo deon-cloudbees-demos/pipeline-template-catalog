@@ -1,0 +1,4 @@
+name: citemplates
+displayName: CI Template Catalog
+version: 1
+type: pipeline-template-catalog
