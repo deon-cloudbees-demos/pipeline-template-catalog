@@ -15,7 +15,7 @@ pipeline {
     disableConcurrentBuilds(abortPrevious: true)
   }
   triggers {
-    eventTrigger jmespathQuery("action=='closed' && repository.full_name=='${repoOwner}/${repo}'")
+    eventTrigger githubPush
   }
   environment {
     repoOwner = "${repoOwner}"
